@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Gradient Formatter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <h1>Minecraft Gradient Formatter</h1>
+        <form id="gradientForm">
+            <label for="startColor">Start Color:</label>
+            <div class="color-picker-container">
+                <input type="color" id="startColor" name="startColor" required>
+                <span id="startColorValue">#000000</span>
+            </div>
+            
+            <label for="endColor">End Color:</label>
+            <div class="color-picker-container">
+                <input type="color" id="endColor" name="endColor" required>
+                <span id="endColorValue">#000000</span>
+            </div>
+            
+            <label for="text">Text:</label>
+            <input type="text" id="text" name="text" required>
+            
+            <label for="bold">Bold:</label>
+            <input type="checkbox" id="bold" name="bold">
+            
+            <label for="format">Format:</label>
+            <select id="format" name="format">
+                <option value="format1">Format 1: &#FFFFFF</option>
+                <option value="format2">Format 2: &x&F&F&F&F&F&F</option>
+            </select>
+            
+            <button type="submit">Generate</button>
+        </form>
+        <div id="output"></div>
+        <div class="footer">
+            <a href="https://github.com/Hukku1/minecrafthex-github.io" target="_blank" class="github-button">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="github-icon">
+            </a>
+            <span class="footer-text">by Hukkui</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
